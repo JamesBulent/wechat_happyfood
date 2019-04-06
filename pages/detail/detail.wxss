@@ -1,0 +1,97 @@
+/* pages/detail/detail.wxss */
+image {
+  width: 750rpx;
+}
+
+.bottom {
+  display: flex;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width:750rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: white;
+}
+.content {
+  background-color:white;
+  /* display: flex; */
+  height: 400rpx;
+  position: relative;
+}
+.top {
+  
+}
+.top .foodname {
+  display: block;
+  text-align: center;
+  color: midnightblue;
+  padding-bottom: 30rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.name {
+/* flex: 8 */
+}
+
+
+.nav {
+  background-color: lightcoral;
+  color:#FFFCED;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.foodmsg {
+  margin: 20rpx 0;
+  width: 750rpx;
+  height: 80rpx;
+  background-color:#FFFCED;
+  /* position: absolute; */
+  color: midnightblue;
+  font-size: 36rpx;
+  line-height: 80rpx;
+}
+.price {
+     
+  /* float: right; */
+  line-height: 100rpx;
+  color: red;
+  padding-left: 40rpx;
+  font-size: 40rpx;
+}
+.foodmsg .restnum {
+  margin: 100rpx;
+
+}
+.foodmsg .counts {
+  margin: 100rpx;
+  font-size: 30rpx;
+  color: #ccc;
+}
+.foodmsg .transformcost {
+  margin: 40rpx;
+}
+.shop {
+  flex: 2;
+  background-color: pink;
+}
+.addTo {
+  flex: 4;
+  background-color:orange;
+}
+.buy {
+  flex: 4;
+  background-color: red;
+}
+.mask {
+  width: 750rpx;
+
+}
+.detailpic {
+
+}

@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<swiper autoplay='{{autoplay}}' indicator-dots='{{indicatorDots}}' indicator-color='{{indicatorDotsColor}}' indicator-active-color='{{indicatorDotsActiveColor}}' interval='{{interval}}' duration='{{duration}}' >
+  <swiper-item wx:for="{{imgurls}}" wx:key="{{index}}" class='swiper'>
+    <image src="{{item}}" class='slideImg'></image>
+  </swiper-item>
+</swiper>
+<view class='productBox flex'>
+  <view class='productItem' wx:for="{{productList}}" wx:key="{{index}}" bindtap="onDetail" data-goods="{{item}}">
+    <image src="{{item.GoodsImage}}" class="productImg"></image>
+    <view class='product_list'>
+      <text class='GoodsName'>{{item.GoodsName}}</text>
+      <text class='GoodsPrice'>¥ {{item.GoodsPrice}}</text>
+      <image src='{{addCartImg}}' class='addCart' catchtap='onAddCart' data-carts="{{item}}"></image>
+    </view>
+  </view>
+</view>

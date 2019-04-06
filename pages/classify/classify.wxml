@@ -1,0 +1,26 @@
+<!--pages/classify/classify.wxml-->
+<view class="content" >
+  <scroll-view class='foodlist' >
+    <text wx:for="{{tabBar}}" wx:key="{{this}}" data-id="{{index}}" bindtap='click' style="background-color: {{color}}">
+      {{item.cat_name}}
+    </text>
+  </scroll-view>
+  <!-- 右边的食品列表 -->
+  <view class='detail'>
+    <scroll-view  scroll-y style="height: {{height}}px" scroll-into-view="ickt{{index}}">
+      <view data-id="{{index}}" hidden="{{arr[index]}}" wx:for="{{categortyContent}}" wx:key="{{this}}" wx:for-item="haha" class="box">
+
+        <!-- <text>{{haha.busines.business_id}}</text> -->
+        <view catchtap="choosedetail" class="bone" wx:for="{{haha.cart}}" wx:key="{{index}}" data-detail="{{item}}" id="ickt{{index+1}}" >
+          <text class="foodlistname">{{item.GoodsName}}</text>
+          <text class="foodlistprice">￥ {{item.GoodsPrice}}</text>
+          
+          <!-- {{item.GoodsInfo}} -->
+          <!-- {{item.GoodsNum}} -->
+          <image class="icon" src="{{imgsrc}}" catchtap="choose" data-name="{{item}}"></image>
+          <image class="shopimg" src="{{item.GoodsImage}}" mode="aspectFit"></image>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

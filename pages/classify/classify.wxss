@@ -1,0 +1,73 @@
+.content {
+  display: flex;
+  }
+  .content .foodlist {
+    flex: 4;
+      font-size: 16px;
+  }
+
+.content .foodlist {
+  flex: 4;
+  font-size: 16px;
+}
+.content .foodlist text {
+
+  display: block;
+  border-bottom: 1px solid #ccc;
+  height: 60px;
+  text-align: center;
+}
+.content .detail {
+  flex: 6;
+}
+.detail {
+  border-left: 1px solid #ccc;
+}
+.detail .box {
+  
+}
+.bone {
+  height: 300rpx;
+  position: relative;
+  /* background-color: #ccc; */
+  border-bottom: 1px solid #ccc;
+}
+.bone .icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 180rpx;
+  right: 20px;
+  z-index: 9;
+}
+.bone .shopimg {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+}
+.bone .foodlistname {
+  width: 180rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  position: absolute;
+  top: 180rpx;
+  z-index: 8;
+  left: 180rpx;
+  font-size: 14px;
+}
+.bone .foodlistprice {
+  font-size: 14px;
+  color: red;
+  position: absolute;
+  top: 120rpx;
+  left: 200rpx;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

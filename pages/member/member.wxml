@@ -1,0 +1,44 @@
+<!--pages/member/member.wxml-->
+<view class="header">
+	<open-data type="userAvatarUrl" class="AvatarUrl"></open-data>
+	<view class="content">
+		<view class="title">
+      <open-data type="userNickName"></open-data>
+    </view>
+	</view>
+</view>
+
+<navigator url="/pages/info/info">
+  <view class="memberItem">
+    <text>系统信息</text>
+    <image class="arrowImg" src="../../images/icon/arrowRight.png"></image>
+  </view>
+</navigator>
+
+<navigator url="/pages/credit/credit">
+  <view class="memberItem">
+    <text>我的信息</text>
+    <image class="arrowImg" src="../../images/icon/arrowRight.png"></image>
+  </view>
+</navigator>
+
+<navigator open-type='switchTab' url="/pages/cart/cart">
+  <view class="memberItem">
+    <text>我的订单</text>
+    <image class="arrowImg" src="../../images/icon/arrowRight.png"></image>
+  </view>
+</navigator>
+
+<navigator url="/pages/address/address">
+  <view class="memberItem">
+    <text>我的位置</text>
+    <image class="arrowImg" src="../../images/icon/arrowRight.png"></image>
+  </view>
+</navigator>
+
+<navigator url="/pages/shake/shake">
+  <view class="memberItem">
+    <text>摇一摇</text>
+    <image class="arrowImg" src="../../images/icon/arrowRight.png"></image>
+  </view>
+</navigator>

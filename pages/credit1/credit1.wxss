@@ -1,0 +1,31 @@
+/* pages/credit1/credit1.wxss */
+page {
+  background-color: #eee;
+}
+.container {
+  margin: 45rpx;
+  background-color: white;
+  border-radius: 50rpx;
+}
+.one, .two, .three, .four  {
+  padding: 15rpx 30rpx;
+}
+.one .name {
+  font-size: 50rpx;
+  font-family: "宋体";
+  font-weight: bold;
+}
+
+.two, .four {
+  font-weight: bold;
+}
+
+navigator {
+  margin: 50rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color:  #FF7B04;
+  color: white;
+  border-radius: 7px;
+}

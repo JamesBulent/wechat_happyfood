@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/detail/detail",
+    "pages/classify/classify",
+    "pages/info/info",
+    "pages/member/member",
+    "pages/credit/credit",
+    "pages/credit1/credit1",
+    "pages/shake/shake",
+    "pages/address/address",
+    "pages/pay/pay",
+    "pages/pay1/pay1"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#405F80",
+    "navigationBarTitleText": "美食小屋",
+    "navigationBarTextStyle":"pink"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/icon/tab_home.png",
+        "selectedIconPath": "./images/icon/tab_home_select.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "./images/icon/tab_category.png",
+        "selectedIconPath": "./images/icon/tab_category_select.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./images/icon/tab_activity.png",
+        "selectedIconPath": "./images/icon/tab_activity_select.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "个人",
+        "iconPath": "./images/icon/tab_member.png",
+        "selectedIconPath": "./images/icon/tab_member_select.png"
+      }
+    ]
+  }
+}

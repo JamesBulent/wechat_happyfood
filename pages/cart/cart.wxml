@@ -1,0 +1,41 @@
+<view class='cart' scroll-y style='height:{{height + 100}}px'>
+<scroll-view>
+	<view class="top" >
+		<!-- 商品订单 -->
+		<view class="list">
+			<!-- 勾选框 -->
+
+
+			<view class="list_item"   wx:for='{{cartArr}}' wx:key='{{this}}'>
+
+				<icon wx:if="{{item.selected}}" class='check' type="success" color="red" 									bindtap="selectList" data-index="{{index}}" />
+
+       			 <icon wx:else type="circle" bindtap="selectList" class='check' data-index="{{index}}"/>
+
+				 <image src='{{item.GoodsImage}}'></image>
+				<view class='txt'>
+						<text class='product'>{{item.GoodsName}}</text>
+						<!-- 减少 -->
+						<text class="minus" bindtap='minus' data-index="{{index}}">-</text>
+						<text class="num">{{item.GoodsNum}}</text>
+						<!-- 增加 -->
+						<text class="plus" bindtap='plus' data-index="{{index}}">+</text>
+						<view class="price" >¥{{item.GoodsPrice * item.GoodsNum}}</view>
+						 <!-- 删除按钮 -->
+						<icon type='clear' color='#bbb' size='20' class='del' bindtap="deleteList" data-index="{{index}}"></icon>
+				</view>
+				<!-- 图片地址 -->
+			</view>
+
+
+		</view>
+	</view>
+</scroll-view>
+	<!-- 购买按钮 -->
+	<view class='bot'>
+		  <icon class='checkbox' wx:if="{{selectAllStatus}}" type="success_circle" color="black" bindtap="selectAll"/>
+    		<icon class='checkbox' wx:else type="circle" color="red" bindtap="selectAll"/>
+		<view class='left'><text>合计:{{totalPrice}}元</text></view>
+		<view class='right'><button class='but'  bindtap='payment' data-index='{{item}}'>确认付款</button></view>
+	</view>
+</view>

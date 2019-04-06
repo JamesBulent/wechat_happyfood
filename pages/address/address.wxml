@@ -1,0 +1,4 @@
+<!--pages/address/address.wxml-->
+<view bindtap='getLocation'>您当前所在地址：</view>
+
+<map latitude='{{latitude}}' longitude='{{longitude}}' scale="18" ></map>

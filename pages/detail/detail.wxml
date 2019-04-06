@@ -1,0 +1,46 @@
+<!--pages/detail/detail.wxml-->
+
+<view class="top">
+  <image src='{{goodsList.GoodsImage}}' mode='center'></image>
+  <text class='foodname'>{{goodsList.GoodsName}}</text>
+</view>
+<view class='mask'></view>
+<view class='nav'>拼团价格只需要 {{goodsList.GoodsPrice -3}}元</view>
+<view class='content'>
+
+  <view class='foodmsg'>
+    <text class='transformcost'>运费{{transformcost}}</text>
+  
+    <text class='restnum'>库存{{100 - goodsList.GoodsNum}}</text>
+    <text class='counts'>已售{{counts}}件</text>
+    
+  </view>
+  <view  class='price'>
+    <text>单价 ¥ {{goodsList.GoodsPrice}}</text>
+  </view>
+  
+  
+  
+    
+  
+  
+  
+  
+</view>
+<view>
+  <text class='title'>商品详情</text>
+</view>
+<view wx:for="{{imgArr}}" wx:key="{{index}}" class="detailList">
+
+  
+  <image src="{{item}}{{index}}.jpg" mode="widthFix"></image>
+</view>
+  
+
+
+<view class='bottom' >
+
+<view class='shop' bindtap='onIndex'>店铺</view>
+<view class='addTo'>加入购物车</view>
+<view class='buy'>立即购买</view>
+</view>

@@ -1,0 +1,27 @@
+page {
+  background:#eee;
+}
+.container {
+  margin: 50rpx;  
+}
+.item {
+  font-size: 35rpx;
+  padding: 20rpx 10rpx;
+  background-color: white;
+  border-bottom: 5rpx solid #eee;
+} 
+
+.item input {
+  width: 300rpx;
+  padding-left: 20rpx;
+}
+
+
+.flex {
+  display: flex;
+}
+.save {
+  margin: 80rpx;
+  color: white;
+  background-color: #FF7B04;
+}

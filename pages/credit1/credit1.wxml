@@ -1,0 +1,24 @@
+<!--pages/credit/credit.wxml-->
+<view class="container">
+
+  <view class="one">
+    <text class="name">姓名： {{username}}</text>
+  </view>
+
+  <view class="two">
+    <text class="tel">手机： {{tel}}</text>
+  </view>
+
+  <view class="three">
+    <text class="postalcode">邮编： {{postalcode}}</text>
+  </view>
+ 
+  <view class="four">
+    <text class="address">地址： {{address}}</text>
+  </view>
+
+  <!-- <navigator open-type='navigateTo' url="/pages/credit/credit">编辑名片</navigator> -->
+</view>
+
+
+ <navigator open-type='navigateTo' url="/pages/credit/credit">编辑名片</navigator>

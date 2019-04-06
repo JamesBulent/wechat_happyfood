@@ -1,0 +1,48 @@
+/* pages/member/member.wxss */
+page {
+  background:white;
+}
+.header .AvatarUrl {
+  width: 220rpx;
+  height: 220rpx;
+ border-radius: 50%;
+ overflow:hidden; 
+}
+.header {
+   background: #009FFF;
+   height: 400rpx;
+   padding-top: 100rpx;
+}
+
+.header open-data {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.content .title {
+  font-size: 45rpx;
+  padding: 25rpx 0;
+}
+
+.memberItem {
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-bottom: 5rpx solid #eee;
+  position: relative;
+}
+
+.arrowImg {
+  width:40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  position: absolute;
+  right: 20rpx;
+}
+
+.memberItem text {
+  font-size: 40rpx;
+}
